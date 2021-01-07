@@ -1,2 +1,2 @@
-# EnterpriseLinux
-utils for Enterprise Linux distros like RHEL, CentOS, and Fedora
+# RedHat Enterprise Linux
+utils for Linux distros like RHEL, CentOS, Fedora and Oracle Linux
