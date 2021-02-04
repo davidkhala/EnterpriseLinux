@@ -1,4 +1,23 @@
-# https://www.thegeekdiary.com/5-useful-examples-of-firewall-cmd-command/
-firewall-cmd --list-services
-firewall-cmd --add-service=http
-firewall-cmd --add-port=2222/tcp
+addService(){
+    sudo firewall-cmd --add-service=$1
+}
+listServices(){
+    sudo firewall-cmd --list-services
+}
+removeService(){
+    sudo firewall-cmd --remove-service=$1
+}
+
+addPort(){
+    # Error: INVALID_PORT: bad port (most likely missing protocol), correct syntax is portid[-portid]/protocol
+    sudo firewall-cmd --add-port=$1
+}
+listPorts(){
+    sudo firewall-cmd --list-ports
+}
+removePort(){
+    sudo firewall-cmd --remove-port=$1
+}
+
+$@
+
