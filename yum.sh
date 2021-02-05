@@ -8,6 +8,6 @@ upgrade(){
 }
 pinyin(){
   sudo yum install ibus-libpinyin
-
+  reboot
 }
 $@
