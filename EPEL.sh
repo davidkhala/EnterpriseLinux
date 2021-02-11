@@ -8,12 +8,5 @@ Redhat7(){
   sudo rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
 }
-optional(){
-  sudo subscription-manager repos --enable "rhel-*-optional-rpms"
-  sudo yum update
-}
-extra(){
-  sudo subscription-manager repos --enable "rhel-*-extras-rpms"
-  sudo yum update
-}
+
 $@
