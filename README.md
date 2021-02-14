@@ -7,3 +7,6 @@ Utils for Linux distros derived or extended from Fedora such as
 
 ## Reference
 - [byvoid: Compare Yum and Apt](https://byvoid.com/zht/blog/yum-apt-cmp/)
+
+## Extends
+https://github.com/davidkhala/linux-utils
