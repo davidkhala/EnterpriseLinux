@@ -4,7 +4,7 @@ client(){
 }
 server(){
   sudo yum install -y mysql-server
-  sudo systemctl start mysqld.service
+  
 }
 Shell(){
   sudo yum install -y mysql-shell
