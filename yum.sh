@@ -3,6 +3,9 @@
 update(){
   yum check-update
 }
+prune(){
+  yum autoremove
+}
 upgrade(){
   sudo yum update-minimal # as a minimal upgrade for neccessary
 }
