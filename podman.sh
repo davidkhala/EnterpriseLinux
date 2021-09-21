@@ -4,4 +4,7 @@ install(){
 asDocker(){
   sudo yum install -y podman-docker 
 }
+rootless(){
+  sudo chmod -R 777 /var/run/podman/
+}
 $@
