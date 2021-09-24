@@ -13,5 +13,5 @@ Utils for Linux distros derived or extended from Fedora such as
 1. Option: setup user initial password 
 ## Reference
 - [byvoid: Compare Yum and Apt](https://byvoid.com/zht/blog/yum-apt-cmp/)
-- [chainlink:using-docker](https://docs.chain.link/docs/running-a-chainlink-node#using-docker)
+- [docker.sh](https://github.com/davidkhala/linux-utils/blob/main/docker.sh)
 
