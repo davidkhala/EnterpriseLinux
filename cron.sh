@@ -3,6 +3,6 @@ install(){
 }
 status-log(){
   sudo service crond restart
-  sudo grep cron /var/log/cron
+  sudo tail -f /var/log/cron
 }
 $1
