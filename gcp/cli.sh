@@ -1,6 +1,6 @@
 set -e
 ## The gcloud tool is a part of the Cloud SDK. You must download and install the Cloud SDK on your system and initialize it before you can use the gcloud tool.
-setup(){
+install(){
   sudo tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
 [google-cloud-sdk]
 name=Google Cloud SDK
@@ -11,9 +11,11 @@ repo_gpgcheck=0
 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOM
-  sudo dnf install google-cloud-sdk
+  sudo dnf -y install google-cloud-sdk
 
 }
-
+init(){
+  gcloud init
+}
 
 $1
