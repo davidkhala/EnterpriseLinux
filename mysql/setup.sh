@@ -13,7 +13,7 @@ Shell(){
   sudo yum install -y mysql-shell
 }
 gpg-fix(){
-  sudo tee -a greetings.txt <<EOT
+  sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql <<EOT
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: SKS 1.1.6
 Comment: Hostname: pgp.mit.edu
