@@ -9,6 +9,9 @@ prune(){
 upgrade(){
   sudo yum update-minimal # as a minimal upgrade for neccessary
 }
+continue(){
+  sudo yum-complete-transaction
+}
 pinyin(){
   sudo yum install ibus-libpinyin
   reboot
