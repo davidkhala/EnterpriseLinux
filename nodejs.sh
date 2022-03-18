@@ -3,7 +3,7 @@ install() {
     sudo dnf install -y @nodejs:14
 }
 nodeGYPDependencies() {
-    sudo yum install -y gcc-c++
+    sudo yum groupinstall -y "Development Tools" "Development Libraries"
 }
 
 $@
