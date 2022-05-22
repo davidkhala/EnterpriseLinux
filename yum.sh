@@ -6,6 +6,11 @@ update(){
 prune(){
   yum autoremove
 }
+release-upgrade(){
+  ## 
+  yum upgrade yum kernel
+  yum -y upgrade
+}
 upgrade(){
   sudo yum update-minimal # as a minimal upgrade for neccessary
 }
