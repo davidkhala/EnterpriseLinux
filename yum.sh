@@ -8,7 +8,7 @@ prune(){
 }
 release-upgrade(){
   ## To Test
-  yum upgrade yum kernel
+  sudo yum upgrade yum kernel
   yum -y upgrade
 }
 upgrade(){
