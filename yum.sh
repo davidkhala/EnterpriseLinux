@@ -7,7 +7,7 @@ prune(){
   yum autoremove
 }
 release-upgrade(){
-  ## 
+  ## To Test
   yum upgrade yum kernel
   yum -y upgrade
 }
