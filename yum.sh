@@ -9,7 +9,7 @@ prune(){
 release-upgrade(){
   ## To Test
   sudo yum upgrade yum kernel
-  yum -y upgrade
+  sudo yum -y upgrade
 }
 upgrade(){
   sudo yum update-minimal # as a minimal upgrade for neccessary
