@@ -7,7 +7,7 @@ Utils for Linux distros derived or extended from Fedora such as
 
 ## Switch to Server with GUI
 1. Ensure Internet first, wired is recommended
-1. `sudo yum groupinstall --y "Server with GUI"`
+1. `sudo yum groupinstall -y "Server with GUI"`
 1. `sudo systemctl set-default graphical.target`
 1. `sudo reboot`
 1. Option: setup user initial password 
