@@ -10,7 +10,8 @@ Utils for Linux distros derived or extended from Fedora such as
 1. `sudo yum groupinstall -y "Server with GUI"`
 1. `sudo systemctl set-default graphical.target`
 1. `sudo reboot`
-1. Option: setup user initial password 
+1. Option: setup user initial password
+  2. `sudo passwd $USER` and/or `sudo passwd root`
 ## Reference
 - [byvoid: Compare Yum and Apt](https://byvoid.com/zht/blog/yum-apt-cmp/)
 - [docker.sh](https://github.com/davidkhala/linux-utils/blob/main/docker.sh)
