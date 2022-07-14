@@ -9,7 +9,7 @@ remove-fedora36(){
   rm /etc/yum.repos.d/winehq.repo
 }
 build(){
-  cd /opt
+  sudo dnf groupinstall "C Development Tools and Libraries"
   wget https://dl.winehq.org/wine/source/5.x/wine-5.1.tar.xz
   tar -Jxf wine-5.1.tar.xz
   rm wine-5.1.tar.xz
