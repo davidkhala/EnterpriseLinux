@@ -14,7 +14,7 @@ build(){
   tar -Jxf wine-5.1.tar.xz
   rm wine-5.1.tar.xz
   cd wine-5.1
-  ./configure  --enable-win64
+  ./configure  --enable-win64 --without-x --without-freetype # it takes over hours
   make
   make install
   wine64 --version
