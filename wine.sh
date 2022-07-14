@@ -16,7 +16,7 @@ build(){
   cd wine-5.1
   ./configure  --enable-win64 --without-x --without-freetype # it takes over hours
   make
-  make install
+  sudo make install
   wine64 --version
 }
 
