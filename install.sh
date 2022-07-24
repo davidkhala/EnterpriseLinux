@@ -2,7 +2,7 @@ jq(){
   sudo yum install -y jq
 }
 pinyin(){
-  sudo yum install ibus-libpinyin
+  sudo yum install -y ibus-libpinyin
   reboot
 }
 $@
