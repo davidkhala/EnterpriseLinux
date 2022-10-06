@@ -4,7 +4,7 @@ update(){
   yum check-update
 }
 prune(){
-  yum autoremove
+  sudo yum autoremove
 }
 release-upgrade(){
   sudo yum upgrade yum kernel
