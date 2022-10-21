@@ -1,6 +1,6 @@
 set -e
 
-install(){
+install() {
   sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
   echo -e "[azure-cli]
 name=Azure CLI
