@@ -1,23 +1,26 @@
-
 # commmon usage of yum
-update(){
+update() {
   yum check-update
 }
-prune(){
+
+prune() {
   sudo yum autoremove
 }
-release-upgrade(){
+
+release-upgrade() {
   sudo yum upgrade yum kernel
   sudo yum -y upgrade
 }
-upgrade(){
+
+upgrade() {
   sudo yum update-minimal # as a minimal upgrade for neccessary
 }
-continue(){
+
+continue() {
   sudo yum-complete-transaction
 }
 
-util(){
+util() {
   sudo yum install -y yum-utils
 }
 $@
