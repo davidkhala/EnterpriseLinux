@@ -1,18 +1,21 @@
-client(){
-  
+client() {
+
   sudo yum install -y mysql
 }
-server(){
-  sudo yum install -y mysql-server
-  
+firewall() {
+  sudo firewall-cmd --add-service=mysql --permanent
+  sudo firewall-cmd --reload
 }
-router(){
+server() {
+  sudo yum install -y mysql-server
+}
+router() {
   sudo yum -y install mysql-router-community
 }
-Shell(){
+Shell() {
   sudo yum install -y mysql-shell
 }
-gpg-fix(){
+gpg-fix() {
   sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql <<EOT
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: SKS 1.1.6
