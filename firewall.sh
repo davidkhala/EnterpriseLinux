@@ -14,8 +14,7 @@ reload() {
     sudo firewall-cmd --reload
 }
 list() {
-    list-port    
-    list-service    
+    sudo firewall-cmd --list-all
 }
 list-service(){
     sudo firewall-cmd --list-service
