@@ -15,6 +15,7 @@ reload() {
 }
 list-port() {
     sudo firewall-cmd --list-ports
+    sudo firewall-cmd --list-service
 }
 remove-port() {
     sudo firewall-cmd --remove-port=$1
