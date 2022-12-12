@@ -22,5 +22,7 @@ release-upgrade() {
 add-repo() {
     sudo dnf config-manager --add-repo $1
 }
-
+remove-repo(){
+    sudo rm -f /etc/yum.repos.d/$1.repo
+}
 $@
