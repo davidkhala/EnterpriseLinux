@@ -14,8 +14,5 @@ EOM
   sudo dnf -y install google-cloud-sdk
 
 }
-init() {
-  gcloud init
-}
 
 $1

@@ -10,9 +10,11 @@ pinyin() {
 EPEL() {
     sudo dnf install -y epel-release
 }
-xclip(){
+xclip() {
     EPEL
     sudo dnf install -y xclip
 }
-
+libtool() {
+    sudo dnf -y install libtool
+}
 $@

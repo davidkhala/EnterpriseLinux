@@ -16,10 +16,10 @@ reload() {
 list() {
     sudo firewall-cmd --list-all
 }
-list-service(){
+list-service() {
     sudo firewall-cmd --list-service
 }
-current-zone(){
+current-zone() {
     sudo firewall-cmd --get-active-zones
 }
 list-port() {
