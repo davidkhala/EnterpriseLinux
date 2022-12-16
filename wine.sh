@@ -1,10 +1,12 @@
 set -e
-install-fedora36() {
+# For fedora36
+install() {
   sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/36/winehq.repo
   sudo dnf install -y winehq-devel
 
 }
-remove-fedora36() {
+# For fedora36
+remove() {
   sudo dnf remove -y winehq-devel
   rm /etc/yum.repos.d/winehq.repo
 }
