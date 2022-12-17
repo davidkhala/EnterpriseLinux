@@ -5,7 +5,7 @@ install() {
     sudo dnf install -y @nodejs:18
 }
 nodeGYPDependencies() {
-    sudo yum groupinstall -y "Development Tools"
+    sudo dnf groupinstall -y "Development Tools"
 }
 
 $@
