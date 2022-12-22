@@ -5,7 +5,7 @@ install() {
   
   # fedora only
   sudo dnf install -y libxcrypt-compat.x86_64
-  
+  gcloud init
 }
 
 $@
