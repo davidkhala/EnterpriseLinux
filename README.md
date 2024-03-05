@@ -5,5 +5,3 @@
 
 ## Reference
 - [byvoid: Compare Yum and Apt](https://byvoid.com/zht/blog/yum-apt-cmp/)
-- [docker.sh](https://github.com/davidkhala/linux-utils/blob/main/docker.sh)
-
