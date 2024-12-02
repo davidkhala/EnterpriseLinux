@@ -1,5 +1,5 @@
 tools() {
-  sudo dnf install @development-tools
+  sudo dnf install -y @development-tools
 
 }
 $@
